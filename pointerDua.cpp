@@ -14,7 +14,7 @@ public:
 int main()
 {
     // Pointer Object mhs menggunakan alokasi dinamis
-    mahasiswa *mhs = new mahasiswa; 
+    mahasiswa *mhs = new mahasiswa;  
     mhs->nim = 2;
     mhs->showNim();
     

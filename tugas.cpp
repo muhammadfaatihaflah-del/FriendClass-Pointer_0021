@@ -1,40 +1,26 @@
 #include <iostream>
 #include <cmath>
+
 using namespace std;
 
-// Forward declaration
-class BelahKetupat;
-
+// ================== CLASS LAYANG-LAYANG ==================
 class LayangLayang {
 private:
-    float d1, d2; // diagonal
-    float s1, s2; // sisi
+    double d1, d2;
 
 public:
-    void input() {
-        cout << "=== Layang-Layang ===" << endl;
-        cout << "Masukkan diagonal 1: ";
+    void inputData() {
+        cout << "Input diagonal 1 layang-layang: ";
         cin >> d1;
-        cout << "Masukkan diagonal 2: ";
+        cout << "Input diagonal 2 layang-layang: ";
         cin >> d2;
-        cout << "Masukkan sisi 1: ";
-        cin >> s1;
-        cout << "Masukkan sisi 2: ";
-        cin >> s2;
     }
-     float luas() {
+
+    double hitungLuas() {
         return 0.5 * d1 * d2;
     }
 
-    float keliling() {
-        return 2 * (s1 + s2);
+    void tampilkanKeliling() {
+        cout << "Keliling layang-layang (belum dihitung)" << endl;
     }
-
-    void output() {
-        cout << "Luas Layang-Layang: " << luas() << endl;
-        cout << "Keliling Layang-Layang: " << keliling() << endl;
-    }
-
-    // friend function dari class BelahKetupat
-    friend float hitungKelilingBelahKetupat(BelahKetupat b);
 };
